@@ -27,6 +27,9 @@ inline ListNode *from_vec(std::vector<int> vec) {
 }
 
 inline std::vector<int> to_vec(ListNode *node) {
+  if (!node)
+    return {};
+
   std::vector<int> res;
   ListNode *runner = node;
 
