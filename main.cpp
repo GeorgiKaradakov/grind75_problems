@@ -1,4 +1,4 @@
-#include "week_1/013-implement-queue-using-stacks.h"
+#include "week_1/015-climbing-stairs.h"
 #include <cstdio>
 
 #define print_vec(vec)                                                         \
@@ -15,13 +15,7 @@
   printf("\n");
 
 int main(int argc, char *argv[]) {
-  MyQueue *obj = new MyQueue();
-  obj->push(1);
-  obj->push(2);
-  printf("peek: %d\n", obj->peek());
-  obj->pop();
-  printf("empty: %d\n", obj->empty());
-  printf("peek: %d\n", obj->peek());
-
+  printf("%d\n", Solution().climbStairs(2));
+  printf("%d\n", Solution().climbStairs(3));
   return 0;
 }
