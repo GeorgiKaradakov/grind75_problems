@@ -1,4 +1,4 @@
-#include "week_1/020-diameter-of-binary-tree.h"
+#include "week_1/027-counting-bits.h"
 #include <cstdio>
 
 #define print_vec(vec)                                                         \
@@ -15,7 +15,7 @@
   printf("\n");
 
 int main(int argc, char *argv[]) {
-  printf("%d\n", Solution().diameterOfBinaryTree(from_vec({1, 2, 3, 4, 5})));
-  printf("%d\n", Solution().diameterOfBinaryTree(from_vec({1, 2})));
+  print_vec(Solution().countBits(2));
+  print_vec(Solution().countBits(5));
   return 0;
 }
