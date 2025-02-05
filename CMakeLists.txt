@@ -20,7 +20,7 @@ include_directories(
     ${SOURCE_DIR}/week_1
     ${SOURCE_DIR}/week_2
     ${SOURCE_DIR}/week_3
-    # ${SOURCE_DIR}/week_4
+    ${SOURCE_DIR}/week_4
     # ${SOURCE_DIR}/week_5
     # ${SOURCE_DIR}/week_6
     # ${SOURCE_DIR}/week_7
