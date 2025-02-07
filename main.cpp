@@ -1,3 +1,4 @@
+#include "045-search-in-rotated-sorted-array.h"
 #include <cstdio>
 
 using namespace std;
@@ -15,4 +16,9 @@ using namespace std;
   }                                                                            \
   printf("\n");
 
-int main(int argc, char *argv[]) { return 0; }
+int main(int argc, char *argv[]) {
+  printf("%d\n", Solution().search({4, 5, 6, 7, 0, 1, 2}, 0));
+  printf("%d\n", Solution().search({4, 5, 6, 7, 0, 1, 2}, 3));
+  printf("%d\n", Solution().search({1}, 0));
+  return 0;
+}
