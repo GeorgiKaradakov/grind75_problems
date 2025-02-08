@@ -1,4 +1,4 @@
-#include "045-search-in-rotated-sorted-array.h"
+#include "049-lowest-common-ancestor-of-binary-tree.h"
 #include <cstdio>
 
 using namespace std;
@@ -17,8 +17,12 @@ using namespace std;
   printf("\n");
 
 int main(int argc, char *argv[]) {
-  printf("%d\n", Solution().search({4, 5, 6, 7, 0, 1, 2}, 0));
-  printf("%d\n", Solution().search({4, 5, 6, 7, 0, 1, 2}, 3));
-  printf("%d\n", Solution().search({1}, 0));
+  print_vec(to_vec(Solution().lowestCommonAncestor(
+      from_vec({3, 5, 1, 6, 2, 0, 8, INT_MAX, INT_MAX, 7, 4}), from_vec({5}),
+      from_vec({1}))));
+
+  print_vec(to_vec(Solution().lowestCommonAncestor(
+      from_vec({3, 5, 1, 6, 2, 0, 8, INT_MAX, INT_MAX, 7, 4}), from_vec({5}),
+      from_vec({4}))));
   return 0;
 }
