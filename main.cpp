@@ -1,4 +1,4 @@
-#include "049-lowest-common-ancestor-of-binary-tree.h"
+#include "050-time-based-key-value-store.h"
 #include <cstdio>
 
 using namespace std;
@@ -17,12 +17,12 @@ using namespace std;
   printf("\n");
 
 int main(int argc, char *argv[]) {
-  print_vec(to_vec(Solution().lowestCommonAncestor(
-      from_vec({3, 5, 1, 6, 2, 0, 8, INT_MAX, INT_MAX, 7, 4}), from_vec({5}),
-      from_vec({1}))));
-
-  print_vec(to_vec(Solution().lowestCommonAncestor(
-      from_vec({3, 5, 1, 6, 2, 0, 8, INT_MAX, INT_MAX, 7, 4}), from_vec({5}),
-      from_vec({4}))));
+  TimeMap *obj = new TimeMap();
+  obj->set("foo", "bar", 1);
+  printf("%s\n", obj->get("foo", 1).c_str());
+  printf("%s\n", obj->get("foo", 3).c_str());
+  obj->set("foo", "bar2", 4);
+  printf("%s\n", obj->get("foo", 4).c_str());
+  printf("%s\n", obj->get("foo", 5).c_str());
   return 0;
 }
