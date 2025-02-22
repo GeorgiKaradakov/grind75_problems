@@ -1,4 +1,4 @@
-#include "052-sort-colors.h"
+#include "053-word-break.h"
 #include <cstdio>
 
 using namespace std;
@@ -17,12 +17,9 @@ using namespace std;
   printf("\n");
 
 int main(int argc, char *argv[]) {
-  vector<int> a = {2, 0, 2, 1, 1, 0};
-  Solution().sortColors(a);
-  print_vec(a);
-
-  a = {2, 0, 1};
-  Solution().sortColors(a);
-  print_vec(a);
+  printf("%d\n", Solution().wordBreak("leetcode", {"leet", "code"}));
+  printf("%d\n", Solution().wordBreak("applepenapple", {"apple", "pen"}));
+  printf("%d\n", Solution().wordBreak("catsandog",
+                                      {"cats", "dog", "sand", "and", "cat"}));
   return 0;
 }
