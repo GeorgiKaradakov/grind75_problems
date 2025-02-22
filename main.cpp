@@ -1,4 +1,4 @@
-#include "050-time-based-key-value-store.h"
+#include "052-sort-colors.h"
 #include <cstdio>
 
 using namespace std;
@@ -17,12 +17,12 @@ using namespace std;
   printf("\n");
 
 int main(int argc, char *argv[]) {
-  TimeMap *obj = new TimeMap();
-  obj->set("foo", "bar", 1);
-  printf("%s\n", obj->get("foo", 1).c_str());
-  printf("%s\n", obj->get("foo", 3).c_str());
-  obj->set("foo", "bar2", 4);
-  printf("%s\n", obj->get("foo", 4).c_str());
-  printf("%s\n", obj->get("foo", 5).c_str());
+  vector<int> a = {2, 0, 2, 1, 1, 0};
+  Solution().sortColors(a);
+  print_vec(a);
+
+  a = {2, 0, 1};
+  Solution().sortColors(a);
+  print_vec(a);
   return 0;
 }
